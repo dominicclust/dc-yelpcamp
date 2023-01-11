@@ -54,7 +54,7 @@ const sessionConfig = {
         mongoUrl: dbUrl,
         touchAfter: 24*3600,
         crypto: {secret: sessionSecret}
-    })
+    }),
     resave: false,
     saveUninitialized: true,
     cookie: {
