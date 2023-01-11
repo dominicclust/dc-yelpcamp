@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/user');
+const User = require('../../models/user');
 const asyncHandler = require('../utils/asyncHandler')
 const passport = require('passport')
-const users = require('../controllers/users')
+const users = require('../../controllers/users')
 
 router.route('/register')
     .get(users.signUpForm)
