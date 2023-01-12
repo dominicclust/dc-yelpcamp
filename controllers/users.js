@@ -36,9 +36,8 @@ module.exports.logout = (req, res, next) => {
         if (err) {
             next(err)
         } else {
-            next()
+            req.flash('success', 'Successfully signed out')
+            res.redirect('/campgrounds')
         }
     });
-    req.flash('success', 'Successfully signed out')
-    res.redirect('/campgrounds')
 }
