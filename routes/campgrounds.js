@@ -1,12 +1,12 @@
 const express = require('express')
-const campgrounds = require('../../controllers/campgrounds')
+const campgrounds = require('../controllers/campgrounds')
 const asyncHandler = require('../utils/asyncHandler')
 const router = express.Router();
 const isLoggedIn = require('../utils/isLoggedIn')
 const isAuthor = require('../utils/isAuthor')
 const validateCampground = require('../utils/validateCampground')
 const multer = require('multer')
-const {storage} = require('../../cloudinary')
+const {storage} = require('../cloudinary')
 const upload = multer({ storage })
 
 router.get('/new', isLoggedIn, campgrounds.newForm)
