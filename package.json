@@ -116,7 +116,7 @@
     "whatwg-url": "^11.0.0"
   },
   "scripts": {
-    "start": "npm i && nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
